@@ -28,5 +28,5 @@ Then you just have to open nvim - and run `:Lazy sync`.
 
 ## Usage
 
-1. To invoke it via a hot-key, simply use `<leader>tb`.
+1. To invoke it via a hot-key, simply use `<leader>t`.
 2. To invoke it via a command, use `:Invert`.

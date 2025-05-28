@@ -2,7 +2,7 @@ local M = {}
 
 -- Default Options
 M.options = {
-	keymap = "<leader>tb",
+	keymap = "<leader>t",
 }
 
 -- Simple function to toggle the background of a users session.
