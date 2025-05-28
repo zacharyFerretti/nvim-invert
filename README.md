@@ -1,14 +1,32 @@
-# nvim-invert 
+# nvim-invert
+
 A simple plugin for automatically toggling the background of Vim. I've tested it when using the EverForest theme. If your session's background is `dark` it will set it to `light` and vice-versa.
 
-## Installation 
-### Using Lazy.nvim
-For default configuration and options, just add this to your `init.lua` file.
+## Installation
 
-```lua
-{ "zacharyFerretti/nvim-invert" }
+### When Using LazyVim
+
+For default configuration and options, you can just create a new plugin file and then paste these contents.
+
+```sh
+cd ~/.config/nvim/lua/plugins/; #Assuming default installation directory.
+touch invert.lua; #Any name here will work.
 ```
 
-## Usage 
-1. To invoke it via a hot-key, simply use `<leader>tb`. 
+```lua
+return {
+  {
+    "zacharyFerretti/nvim-invert",
+    config = function()
+      require("invert").setup()
+    end,
+  },
+}
+```
+
+Then you just have to open nvim - and run `:Lazy sync`.
+
+## Usage
+
+1. To invoke it via a hot-key, simply use `<leader>tb`.
 2. To invoke it via a command, use `:Invert`.
