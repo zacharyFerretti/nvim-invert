@@ -17,9 +17,10 @@ touch invert.lua; #Any name here will work.
 return {
   {
     "zacharyFerretti/nvim-invert",
-    config = function()
-      require("invert").setup()
-    end,
+    opts = {
+      keymap = "<leader>ut",
+      persist = true,
+    },
   },
 }
 ```
@@ -28,5 +29,5 @@ Then you just have to open nvim - and run `:Lazy sync`.
 
 ## Usage
 
-1. To invoke it via a hot-key, simply use `<leader>t`.
+1. To invoke it via a hot-key, simply use `<leader>ut`.
 2. To invoke it via a command, use `:Invert`.

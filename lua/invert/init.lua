@@ -33,7 +33,6 @@ function M.setup(opts)
 end
 
 -- For lazy users, default to running the setup command.
-M.setup()
 
 vim.api.nvim_create_user_command("Invert", function()
 	M.toggleBackground()
